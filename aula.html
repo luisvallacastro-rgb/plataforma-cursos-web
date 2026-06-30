@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula del curso | Academia Nova</title>
+    <meta
+      name="description"
+      content="Aula virtual para estudiantes con curso comprado, modulos, progreso, recursos y proyecto final."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="subpage classroom-page">
+    <header class="site-header classroom-header" data-header>
+      <a class="brand" href="index.html" aria-label="Academia Nova">
+        <span class="brand-mark">N</span>
+        <span>
+          <strong>Academia Nova</strong>
+          <small>Campus virtual</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="cursos.html">Mis cursos</a>
+        <a href="curso-detalle.html" data-classroom-detail-link>Detalle</a>
+        <a href="#modulos">Modulos</a>
+        <a href="#recursos">Recursos</a>
+        <a class="login-link" href="login.html" data-login-link>Ingresar</a>
+      </nav>
+    </header>
+
+    <main class="classroom" data-classroom>
+      <section class="classroom-hero">
+        <div>
+          <a class="back-link" href="cursos.html">Volver a mis cursos</a>
+          <p class="eyebrow" data-classroom-category>Curso</p>
+          <h1 data-classroom-title>Curso</h1>
+          <p data-classroom-summary></p>
+          <div class="classroom-progress" aria-label="Progreso del curso">
+            <span><b data-classroom-progress>36%</b> completado</span>
+            <div><i></i></div>
+          </div>
+        </div>
+        <aside class="classroom-next">
+          <span>Siguiente clase</span>
+          <strong data-classroom-next>Modulo 1</strong>
+          <a class="button primary" href="#clase">Continuar</a>
+        </aside>
+      </section>
+
+      <section class="classroom-grid">
+        <aside class="classroom-sidebar" id="modulos">
+          <div class="classroom-sidebar-head">
+            <span>Contenido</span>
+            <strong data-classroom-lessons></strong>
+          </div>
+          <div class="classroom-modules" data-classroom-modules></div>
+        </aside>
+
+        <section class="lesson-stage" id="clase">
+          <div class="lesson-player">
+            <span class="play-mark">▶</span>
+            <div>
+              <p class="eyebrow">Clase actual</p>
+              <h2 data-classroom-current-title></h2>
+              <p data-classroom-current-copy></p>
+            </div>
+          </div>
+
+          <div class="lesson-tabs">
+            <article>
+              <span>Objetivo</span>
+              <p data-classroom-objective></p>
+            </article>
+            <article>
+              <span>Actividad</span>
+              <p>Completa la plantilla del modulo y sube tu avance para recibir retroalimentacion.</p>
+            </article>
+          </div>
+        </section>
+
+        <aside class="classroom-tools" id="recursos">
+          <div class="tool-card">
+            <span>Recursos</span>
+            <a href="#">Guia del estudiante</a>
+            <a href="#">Plantilla editable</a>
+            <a href="#">Checklist de entrega</a>
+          </div>
+          <div class="tool-card accent">
+            <span>Proyecto final</span>
+            <strong data-classroom-project></strong>
+            <p data-classroom-project-copy></p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalle del curso | Academia Nova</title>
+    <meta
+      name="description"
+      content="Detalle de curso de Academia Nova con descripcion, contenido, beneficios y ruta de aprendizaje."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="subpage">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Academia Nova">
+        <span class="brand-mark">N</span>
+        <span>
+          <strong>Academia Nova</strong>
+          <small>Formacion profesional</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="cursos.html" aria-current="page">Cursos</a>
+        <a href="index.html#metodologia">Metodologia</a>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="index.html#campus">Campus</a>
+        <a class="login-link" href="login.html" data-login-link>Ingresar</a>
+        <a class="nav-cta" href="index.html#contacto">Inscribirme</a>
+      </nav>
+    </header>
+
+    <main class="course-detail-page" data-course-detail>
+      <section class="detail-hero">
+        <div class="detail-hero-copy">
+          <a class="back-link" href="cursos.html">Volver a cursos</a>
+          <div class="detail-rating"><span>☆☆☆☆☆</span><b data-detail-rating>0.0</b><small>0 valoraciones</small></div>
+          <p class="eyebrow" data-detail-category>Curso</p>
+          <h1 data-detail-title>Curso</h1>
+          <p data-detail-summary></p>
+          <div class="detail-facts">
+            <div>
+              <span>Instructor</span>
+              <strong>Academia Nova</strong>
+            </div>
+            <div>
+              <span>Categoria</span>
+              <strong data-detail-category-label></strong>
+            </div>
+            <div>
+              <span>Estudiantes</span>
+              <strong data-detail-students></strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="detail-enroll-card">
+          <div class="course-media detail-media" data-detail-media>
+            <div class="course-badge">NOVA</div>
+            <h3 data-detail-short-title></h3>
+            <span class="price"><del data-detail-old-price></del><strong data-detail-price></strong></span>
+          </div>
+          <a class="button primary detail-buy" href="index.html#contacto" data-course-action>Obtener el curso</a>
+          <p data-course-action-note>Certificado incluido</p>
+          <div class="detail-card-list">
+            <div><span>Duracion</span><strong data-detail-duration></strong></div>
+            <div><span>Conferencias</span><strong data-detail-lessons></strong></div>
+            <div><span>Nivel</span><strong data-detail-level></strong></div>
+            <div><span>Acceso</span><strong>De por vida</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="detail-layout">
+        <div class="detail-tabs-card">
+          <div class="tab-list" role="tablist" aria-label="Informacion del curso">
+            <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab="overview">
+              De que trata
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="content">
+              Contenido
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="benefits">
+              Beneficios
+            </button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="project">
+              Proyecto final
+            </button>
+          </div>
+
+          <div class="tab-panel is-active" role="tabpanel" data-panel="overview">
+            <div class="detail-feature">
+              <p class="pill">Ruta aplicada</p>
+              <h2 data-overview-title></h2>
+              <p data-overview-copy></p>
+            </div>
+            <div class="learning-grid" data-objectives></div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" data-panel="content">
+            <div class="module-list" data-modules></div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" data-panel="benefits">
+            <div class="benefit-detail-grid" data-benefits></div>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" data-panel="project">
+            <div class="project-panel">
+              <p class="pill">Evidencia final</p>
+              <h2 data-project-title></h2>
+              <p data-project-copy></p>
+              <div class="project-steps" data-project-steps></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="popular-card">
+          <h2>Tambien te puede interesar</h2>
+          <div data-related-courses></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Academia Nova</strong>
+        <p>Educacion continua para profesionales que quieren avanzar con criterio, practica y acompanamiento.</p>
+      </div>
+      <nav aria-label="Enlaces secundarios">
+        <a href="cursos.html">Cursos</a>
+        <a href="index.html#metodologia">Metodologia</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cursos | Academia Nova</title>
+    <meta
+      name="description"
+      content="Catalogo de cursos de Academia Nova con categorias, niveles, precios y formacion profesional online."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="subpage">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Academia Nova">
+        <span class="brand-mark">N</span>
+        <span>
+          <strong>Academia Nova</strong>
+          <small>Formacion profesional</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="cursos.html" aria-current="page">Cursos</a>
+        <a href="index.html#metodologia">Metodologia</a>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="index.html#campus">Campus</a>
+        <a class="login-link" href="login.html" data-login-link>Ingresar</a>
+        <a class="nav-cta" href="index.html#contacto">Inscribirme</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section courses courses-page">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Catalogo de cursos</p>
+            <h1>Explora cursos segun tu siguiente meta</h1>
+          </div>
+          <a class="text-link" href="index.html#contacto">Recibir catalogo completo</a>
+        </div>
+
+        <div class="course-catalog">
+          <aside class="course-filters" aria-label="Categorias de cursos">
+            <div class="filter-heading">
+              <h3>Categoria</h3>
+              <span></span>
+            </div>
+            <button class="filter-option is-active" type="button" data-filter="all"><span></span>Todos los cursos</button>
+            <button class="filter-option" type="button" data-filter="gestion"><span></span>Gestion empresarial</button>
+            <button class="filter-option" type="button" data-filter="marketing"><span></span>Marketing y ventas</button>
+            <button class="filter-option" type="button" data-filter="datos"><span></span>Analisis de datos</button>
+            <button class="filter-option" type="button" data-filter="liderazgo"><span></span>Liderazgo</button>
+            <button class="filter-option" type="button" data-filter="docentes"><span></span>Docentes</button>
+            <button class="filter-results" type="button" data-filter="all">Mostrar resultados</button>
+            <button class="filter-reset" type="button" data-filter="all">Reset All</button>
+          </aside>
+
+          <div class="course-grid" data-course-grid>
+            <a class="course-card" href="curso-detalle.html?curso=gestion-empresarial" data-category="gestion">
+              <div class="course-media media-gestion">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso en Gestion Empresarial</h3>
+                <span class="price"><del>USD$124.99</del><strong>USD$44.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Gestion empresarial</p>
+              <h3>Curso en Gestion Empresarial y Mejora de Procesos</h3>
+              <div class="course-meta"><span>26 estudiantes</span><span>8128 vistas</span></div>
+              <div class="course-detail"><span>40 Conferencias</span><span>Avanzado</span></div>
+            </a>
+
+            <a class="course-card" href="curso-detalle.html?curso=marketing-digital" data-category="marketing">
+              <div class="course-media media-marketing">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso en Marketing Digital</h3>
+                <span class="price"><del>USD$189.99</del><strong>USD$54.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Marketing y ventas</p>
+              <h3>Curso en Marketing Digital, Contenido y Embudos de Venta</h3>
+              <div class="course-meta"><span>13 estudiantes</span><span>5777 vistas</span></div>
+              <div class="course-detail"><span>128 Conferencias</span><span>Avanzado</span></div>
+            </a>
+
+            <a class="course-card" href="curso-detalle.html?curso=analisis-datos" data-category="datos">
+              <div class="course-media media-data">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso en Analisis de Datos</h3>
+                <span class="price"><del>USD$289.99</del><strong>USD$49.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Analisis de datos</p>
+              <h3>Curso en Analisis de Datos para Decisiones de Negocio</h3>
+              <div class="course-meta"><span>27 estudiantes</span><span>9414 vistas</span></div>
+              <div class="course-detail"><span>85 Conferencias</span><span>Avanzado</span></div>
+            </a>
+
+            <a class="course-card" href="curso-detalle.html?curso=liderazgo-equipos" data-category="liderazgo">
+              <div class="course-media media-leadership">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso en Liderazgo de Equipos</h3>
+                <span class="price"><strong>USD$89.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Liderazgo</p>
+              <h3>Curso en Liderazgo, Comunicacion y Gestion de Equipos</h3>
+              <div class="course-meta"><span>34 estudiantes</span><span>6840 vistas</span></div>
+              <div class="course-detail"><span>52 Conferencias</span><span>Intermedio</span></div>
+            </a>
+
+            <a class="course-card" href="curso-detalle.html?curso=docentes-digitales" data-category="docentes">
+              <div class="course-media media-teachers">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso para Docentes Digitales</h3>
+                <span class="price"><del>USD$149.99</del><strong>USD$39.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Docentes</p>
+              <h3>Curso en Diseno de Clases Virtuales y Evaluacion Digital</h3>
+              <div class="course-meta"><span>19 estudiantes</span><span>4206 vistas</span></div>
+              <div class="course-detail"><span>64 Conferencias</span><span>Intermedio</span></div>
+            </a>
+
+            <a class="course-card" href="curso-detalle.html?curso=finanzas-practicas" data-category="gestion">
+              <div class="course-media media-finance">
+                <div class="course-badge">NOVA</div>
+                <h3>Curso en Finanzas Practicas</h3>
+                <span class="price"><del>USD$189.99</del><strong>USD$44.99</strong></span>
+              </div>
+              <div class="rating"><span>☆☆☆☆☆</span><b>0.0</b></div>
+              <p class="course-category">Gestion empresarial</p>
+              <h3>Curso en Finanzas, Presupuestos e Indicadores Gerenciales</h3>
+              <div class="course-meta"><span>31 estudiantes</span><span>7312 vistas</span></div>
+              <div class="course-detail"><span>72 Conferencias</span><span>Avanzado</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Academia Nova</strong>
+        <p>Educacion continua para profesionales que quieren avanzar con criterio, practica y acompanamiento.</p>
+      </div>
+      <nav aria-label="Enlaces secundarios">
+        <a href="cursos.html">Cursos</a>
+        <a href="index.html#metodologia">Metodologia</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
