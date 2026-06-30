@@ -1,4 +1,4 @@
-# Academia Nova
+# Sitio Educativo
 
 Sitio educativo estatico listo para publicar en GitHub y Render.
 

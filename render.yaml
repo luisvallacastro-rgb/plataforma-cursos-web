@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: academia-nova
+    name: educacion-web
     runtime: static
     buildCommand: echo "Static site ready"
     staticPublishPath: .

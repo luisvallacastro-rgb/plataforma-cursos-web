@@ -52,7 +52,7 @@ filterButtons.forEach((button) => {
 
 function getStoredUser() {
   try {
-    return JSON.parse(localStorage.getItem("academiaNovaUser") || "null");
+    return JSON.parse(localStorage.getItem("campusUser") || "null");
   } catch {
     return null;
   }
@@ -82,7 +82,7 @@ function initLoginForm() {
       return;
     }
 
-    localStorage.setItem("academiaNovaUser", JSON.stringify({ name, signedAt: new Date().toISOString() }));
+    localStorage.setItem("campusUser", JSON.stringify({ name, signedAt: new Date().toISOString() }));
     if (message) message.textContent = "Acceso habilitado. Redirigiendo al campus...";
     setTimeout(() => {
       window.location.href = courseId ? `aula.html?curso=${courseId}` : "cursos.html";
@@ -344,7 +344,7 @@ function initCourseDetail() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("curso") || "gestion-empresarial";
   const course = courseData[id] || courseData["gestion-empresarial"];
-  document.title = `${course.shortTitle} | Academia Nova`;
+  document.title = `${course.shortTitle} | Academia`;
 
   const setText = (selector, value) => {
     const element = document.querySelector(selector);
