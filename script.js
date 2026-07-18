@@ -344,7 +344,42 @@ function initCourseDetail() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("curso") || "gestion-empresarial";
   const course = courseData[id] || courseData["gestion-empresarial"];
-  document.title = `${course.shortTitle} | Academia`;
+  const courseUrl = `https://impulsoempresarial.net/curso-detalle.html?curso=${id}`;
+  document.title = `${course.shortTitle} | Impulso Empresarial`;
+
+  const setMeta = (selector, attribute, value) => {
+    const element = document.querySelector(selector);
+    if (element) element.setAttribute(attribute, value);
+  };
+
+  setMeta('meta[name="description"]', "content", course.summary);
+  setMeta('link[rel="canonical"]', "href", courseUrl);
+  setMeta('meta[property="og:title"]', "content", `${course.shortTitle} | Impulso Empresarial`);
+  setMeta('meta[property="og:description"]', "content", course.summary);
+  setMeta('meta[property="og:url"]', "content", courseUrl);
+
+  const structuredData = document.createElement("script");
+  structuredData.type = "application/ld+json";
+  structuredData.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: course.title,
+    description: course.summary,
+    url: courseUrl,
+    provider: {
+      "@type": "EducationalOrganization",
+      name: "Impulso Empresarial",
+      url: "https://impulsoempresarial.net/"
+    },
+    offers: {
+      "@type": "Offer",
+      price: course.price.replace(/[^0-9.]/g, ""),
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: courseUrl
+    }
+  });
+  document.head.appendChild(structuredData);
 
   const setText = (selector, value) => {
     const element = document.querySelector(selector);
